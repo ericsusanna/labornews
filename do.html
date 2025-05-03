@@ -26,6 +26,74 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .service-section {
+      padding: 80px 0;
+      background: #f8f9fa;
+    }
+
+    .service-item {
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    .service-icon {
+      width: 120px;
+      height: 120px;
+      background: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      position: relative;
+    }
+
+    .service-icon img {
+      width: 50px;
+      height: 50px;
+      filter: invert(1);
+    }
+
+    .service-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .service-description {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .service-sub {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .connection-line {
+      position: absolute;
+      border: 2px solid #ffd700;
+      z-index: 0;
+    }
+
+    @media (max-width: 768px) {
+      .service-icon {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .service-icon img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -36,7 +104,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
           <a class="navbar-brand" href="index.html">
             <span>
-              노무법인 한수
+              노무법인 승
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,131 +138,108 @@
     <!-- end header section -->
   </div>
 
-  <!-- do section -->
-  <section class="do_section layout_padding">
+  <!-- service section -->
+  <section class="service-section">
     <div class="container">
-      <div class="heading_container">
-        <h2>
-          주요 업무분야
-        </h2>
-        <p>
-          전문적인 노무 서비스를 제공합니다
-        </p>
-      </div>
-      <div class="do_container">
-        <div class="box arrow-start arrow_bg">
-          <div class="img-box">
-            <img src="images/d-1.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              인사노무자문
-            </h6>
-            <p>근로계약, 임금, 근로시간 등 자문</p>
-            <p>노조 단체교섭 쟁의행위 대응 자문</p>
+      <div class="row">
+        <!-- 인사노무자문 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="service-icon">
+              <span style="color: white; font-size: 18px;">인사노무</span>
+            </div>
+            <h3 class="service-title">인사노무자문</h3>
+            <p class="service-description">근로계약, 임금, 근로시간 등 자문</p>
+            <p class="service-sub">노조 단체교섭 쟁의행위 대응 자문</p>
           </div>
         </div>
-        <div class="box arrow-middle arrow_bg">
-          <div class="img-box">
-            <img src="images/d-2.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              노동사건
-            </h6>
-            <p>부당해고, 근로자성, 임금체불</p>
-            <p>부당전보, 특수형태근로자</p>
-            <p>근로감독 대응 등</p>
-          </div>
-        </div>
-        <div class="box arrow-middle arrow_bg">
-          <div class="img-box">
-            <img src="images/d-3.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              인사컨설팅
-            </h6>
-            <p>HR전략 수립, 임금체도 개편</p>
-            <p>근로시간 개편, 평가제도 개편</p>
-            <p>조직문화진단, 보상제도 설계</p>
-            <p>공정채용 진단</p>
+
+        <!-- 노동사건 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="service-icon">
+              <span style="color: white; font-size: 18px;">사건</span>
+            </div>
+            <h3 class="service-title">노동사건</h3>
+            <p class="service-description">부당해고, 근로자성, 임금체불</p>
+            <p class="service-sub">부당해고, 부수적태도금지</p>
           </div>
         </div>
-        <div class="box arrow-end arrow_bg">
-          <div class="img-box">
-            <img src="images/d-4.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              단체교섭 노조 대응 컨설팅
-            </h6>
-            <p>단체교섭 전략 수립 및 노조 대응 방안 컨설팅</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/d-5.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              급여아웃소싱
-            </h6>
-            <p>급여관리 및 4대보험, 인사관리 아웃소싱 서비스</p>
+
+        <!-- 인사컨설팅 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="service-icon">
+              <span style="color: white; font-size: 18px;">컨설팅</span>
+            </div>
+            <h3 class="service-title">인사컨설팅</h3>
+            <p class="service-description">HR전략 수립, 임금체계 개편</p>
+            <p class="service-sub">근로시간 개편, 평가제도 개편</p>
           </div>
         </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/d-6.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              고용장려금지원사업
-            </h6>
-            <p>청년일자리도약장려금</p>
-            <p>고령자 계속고용장려금</p>
-            <p>육아휴직 대체인력 지원금 등 신청 대행</p>
+
+        <!-- 단체교섭 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="service-icon">
+              <span style="color: white; font-size: 18px;">단체교섭</span>
+            </div>
+            <h3 class="service-title">단체교섭 노조 대응 컨설팅</h3>
+            <p class="service-description">단체교섭 전략 수립 및 노조 대응</p>
           </div>
         </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/d-7.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              일터혁신 컨설팅 지원사업
-            </h6>
-            <p>근로시간, 임금, 직무, 평가, 승진 재설계</p>
-            <p>조직문화 개선 등 무료 컨설팅</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/d-8.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              직장내 괴롭힘 조사 및 갈등조정
-            </h6>
-            <p>직장내 괴롭힘 사건 발생시 조사</p>
-            <p>남용등 갈등시 갈등조정 활동</p>
+
+        <!-- 급여아웃소싱 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="service-icon">
+              <span style="color: white; font-size: 18px;">급여</span>
+            </div>
+            <h3 class="service-title">급여아웃소싱</h3>
+            <p class="service-description">급여관리 및 4대보험, 인사관리 아웃소싱 서비스</p>
           </div>
         </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/d-9.png" alt="">
+
+        <!-- 고용장려금 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="service-icon">
+              <span style="color: white; font-size: 18px;">지원금</span>
+            </div>
+            <h3 class="service-title">고용장려금지원사업</h3>
+            <p class="service-description">청년일자리 창출지원금</p>
+            <p class="service-sub">고령자 계속고용장려금</p>
+            <p class="service-sub">육아휴직 대체인력 지원금 등 신청 대행</p>
           </div>
-          <div class="detail-box">
-            <h6>
-              ADR (대안적 분쟁해결제도)
-            </h6>
-            <p>노사관계, 개별적근로관계 갈등에 대한 조정활동</p>
+        </div>
+
+        <!-- 일터혁신 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="service-icon">
+              <span style="color: white; font-size: 18px;">일터혁신</span>
+            </div>
+            <h3 class="service-title">일터혁신 컨설팅 지원사업</h3>
+            <p class="service-description">근로시간, 임금, 직무, 평가, 승진 체계개선</p>
+            <p class="service-sub">조직문화 개선 등 무료 컨설팅</p>
+          </div>
+        </div>
+
+        <!-- 중소기업 특화 무료 컨설팅 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="service-item">
+            <div class="service-icon">
+              <span style="color: white; font-size: 18px;">중소기업</span>
+            </div>
+            <h3 class="service-title">중소기업 특화 무료 컨설팅</h3>
+            <p class="service-description">20인 이상 기업 대상</p>
+            <p class="service-sub">취업규칙, 근로계약서, 각종 서식 점검/개정</p>
+            <p class="service-sub">채용, 임금, 근로시간, 평가, 성과급 등 설계</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- end do section -->
 
   <!-- info section -->
   <section class="info_section ">
@@ -210,8 +255,8 @@
                 <img src="images/location-white.png" width="18px" alt="">
               </div>
               <p>
-                서울시 강남구 테헤란로 309, 1118호 (삼성제일빌딩)<br>
-                서울시 영등포구 여의대로 24
+                서울시 서초구 서초중앙로8길 7<br>
+                서울시 영등포구 여의도동 28-1
               </p>
             </div>
             <div>
@@ -219,8 +264,7 @@
                 <img src="images/telephone-white.png" width="12px" alt="">
               </div>
               <p>
-                02-3487-3029<br>
-                070-4118-3448
+                02-780-9571
               </p>
             </div>
             <div>
@@ -228,7 +272,7 @@
                 <img src="images/envelope-white.png" width="18px" alt="">
               </div>
               <p>
-                info@nomusa10.com
+                cplavictory@naver.com
               </p>
             </div>
           </div>
@@ -236,7 +280,7 @@
         <div class="col-md-3">
           <div class="info_info">
             <h5>
-              노무법인 한수
+              노무법인 승
             </h5>
             <p>
               20년 경력의 인사노무관리 전문가 조성기 노무사가<br>
@@ -313,7 +357,7 @@
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
-      &copy; 2024 노무법인 한수. All rights reserved.
+      &copy; 노무법인 승. All rights reserved.
     </p>
   </section>
   <!-- footer section -->
